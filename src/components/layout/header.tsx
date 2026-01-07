@@ -1,7 +1,7 @@
 'use client';
 
-import { Moon, Sun, Menu, BookOpen } from 'lucide-react';
-import { useTheme } from 'next-themes';
+import { Menu, BookOpen } from 'lucide-react';
+// import { useTheme } from 'next-themes'; // Kept for future use
 import { usePathname, useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
@@ -25,14 +25,15 @@ const navigation = [
 export function Header() {
   const pathname = usePathname();
   const router = useRouter();
-  const { theme, setTheme } = useTheme();
+  // const { theme, setTheme } = useTheme(); // Kept for future use
   const [isOpen, setIsOpen] = useState(false);
 
   const calculators = navigation.filter((item) => item.href.startsWith('/calculator'));
 
-  const toggleTheme = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
-  };
+  // Theme toggle function kept for future use
+  // const toggleTheme = () => {
+  //   setTheme(theme === 'dark' ? 'light' : 'dark');
+  // };
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -75,20 +76,11 @@ export function Header() {
             </SelectContent>
           </Select>
 
-          <Button variant="ghost" size="icon" onClick={toggleTheme} className="ml-1">
-            <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-            <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-            <span className="sr-only">Toggle theme</span>
-          </Button>
+          {/* Theme toggle disabled - light mode default */}
         </nav>
 
         {/* Mobile Nav */}
         <div className="lg:hidden flex items-center gap-2">
-          <Button variant="ghost" size="icon" onClick={toggleTheme}>
-            <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-            <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-            <span className="sr-only">Toggle theme</span>
-          </Button>
           
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
