@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "TaxPlan Nigeria - Nigeria Tax Calculator 2025",
+  title: "TaxCalc Nigeria - Nigeria Tax Calculator 2025",
   description: "The definitive Tax Intelligence Platform for Nigeria. Calculate PIT, CIT, CGT, VAT under the Nigeria Tax Act 2025. Compare old vs new tax laws.",
   keywords: ["Nigeria tax calculator", "PIT calculator Nigeria", "Income tax Nigeria 2025", "Tax Act 2025"],
 };

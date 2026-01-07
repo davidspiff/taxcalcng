@@ -198,7 +198,7 @@ export default function PITCalculatorPage() {
 
       {/* Print Header */}
       <div className="hidden print:block text-center mb-8 pt-8">
-        <h1 className="text-3xl font-bold text-[#1E3A5F]">TaxPlan Nigeria Report</h1>
+        <h1 className="text-3xl font-bold text-[#1E3A5F]">TaxCalc Nigeria Report</h1>
         <p className="text-gray-500">Generated on {new Date().toLocaleDateString()}</p>
       </div>
 

@@ -7,7 +7,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-4">
-              <span className="text-xl font-bold text-primary">TaxPlan</span>
+              <span className="text-xl font-bold text-primary">TaxCalc</span>
               <span className="text-xl font-bold text-emerald-500">Nigeria</span>
             </div>
             <p className="text-sm text-muted-foreground max-w-md leading-relaxed">
@@ -34,7 +34,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-border/40 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} TaxPlan Nigeria. Based on Nigeria Tax Act 2025.</p>
+          <p>&copy; {new Date().getFullYear()} TaxCalc Nigeria. Based on Nigeria Tax Act 2025.</p>
           <p className="mt-2 text-xs opacity-70">
             Disclaimer: This tool is for informational purposes only and does not constitute tax advice.
           </p>

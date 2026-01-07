@@ -124,7 +124,7 @@ export function generatePDFHTML(content: PDFContent): string {
     <html>
     <head>
       <meta charset="UTF-8">
-      <title>Tax Calculation Report - TaxPlanNigeria</title>
+      <title>Tax Calculation Report - TaxCalc Nigeria</title>
       <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { 
@@ -335,7 +335,7 @@ export function generatePDFHTML(content: PDFContent): string {
     <body>
       <div class="header">
         <div class="brand">
-          <span class="brand-primary">TaxPlan</span><span class="brand-accent">Nigeria</span>
+          <span class="brand-primary">TaxCalc</span><span class="brand-accent">Nigeria</span>
         </div>
         <div class="subtitle">Tax Calculation Report • Generated ${content.generatedDate}</div>
         <div class="calculator-type">${content.calculatorType}</div>
@@ -375,7 +375,7 @@ export function generatePDFHTML(content: PDFContent): string {
       
       <div class="footer">
         <p><strong>Disclaimer:</strong> This report is for informational purposes only and does not constitute tax advice.</p>
-        <p>Based on Nigeria Tax Act 2026 • © ${new Date().getFullYear()} TaxPlanNigeria</p>
+        <p>Based on Nigeria Tax Act 2026 • © ${new Date().getFullYear()} TaxCalc Nigeria</p>
       </div>
     </body>
     </html>

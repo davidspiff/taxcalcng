@@ -39,7 +39,7 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center space-x-2">
           <div className="flex items-center">
-            <span className="text-2xl font-bold text-primary">TaxPlan</span>
+            <span className="text-2xl font-bold text-primary">TaxCalc</span>
             <span className="text-2xl font-bold text-emerald-500">Nigeria</span>
           </div>
         </Link>
