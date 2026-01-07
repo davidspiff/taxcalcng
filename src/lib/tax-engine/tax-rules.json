@@ -1,0 +1,80 @@
+{
+  "version": "2025.2.0",
+  "effective_date": "2026-01-01",
+  "tax_regime_2026": {
+    "pit": {
+      "bands": [
+        { "min": 0, "max": 800000, "rate": 0 },
+        { "min": 800001, "max": 3000000, "rate": 0.15 },
+        { "min": 3000001, "max": 12000000, "rate": 0.18 },
+        { "min": 12000001, "max": 25000000, "rate": 0.21 },
+        { "min": 25000001, "max": 50000000, "rate": 0.23 },
+        { "min": 50000001, "max": null, "rate": 0.25 }
+      ],
+      "minimum_wage_exempt": true,
+      "minimum_wage_amount": 70000
+    },
+    "cit": {
+      "small_company_threshold": 50000000,
+      "small_company_rate": 0,
+      "standard_rate": 0.30,
+      "minimum_effective_rate": 0.15
+    },
+    "deductions": {
+      "rent_relief": { "rate": 0.20, "cap": 500000 },
+      "pension": { "rate": 0.08, "cap": null },
+      "nhf": { "rate": 0.025, "cap": null },
+      "nhis": { "rate": 0.05, "cap": null }
+    },
+    "cgt": {
+      "integrated_into_income_tax": true,
+      "company_rate": 0.30,
+      "share_exemption": { "proceeds_threshold": 150000000, "gains_threshold": 10000000 },
+      "personal_chattels_threshold": 5000000,
+      "personal_injury_exemption": 50000000,
+      "motor_vehicles_exempt_per_year": 2
+    },
+    "fossil_fuel_surcharge": 0.05,
+    "vat_rate": 0.075,
+    "development_levy_rate": 0.04
+  },
+  "tax_regime_old": {
+    "pit": {
+      "bands": [
+        { "min": 0, "max": 300000, "rate": 0.07 },
+        { "min": 300001, "max": 600000, "rate": 0.11 },
+        { "min": 600001, "max": 1100000, "rate": 0.15 },
+        { "min": 1100001, "max": 1600000, "rate": 0.19 },
+        { "min": 1600001, "max": 3200000, "rate": 0.21 },
+        { "min": 3200001, "max": null, "rate": 0.24 }
+      ],
+      "consolidated_relief": { "fixed": 200000, "rate": 0.20 }
+    },
+    "cit": {
+      "small_company_threshold": 25000000,
+      "small_company_rate": 0,
+      "medium_company_threshold": 100000000,
+      "medium_company_rate": 0.20,
+      "standard_rate": 0.30,
+      "minimum_tax_rate": 0.005
+    },
+    "cgt": {
+      "standard_rate": 0.10
+    },
+    "vat_rate": 0.075,
+    "tertiary_education_tax_rate": 0.025
+  },
+  "stamp_duties": {
+    "bank_transfer_flat": 50,
+    "bank_transfer_threshold": 10000,
+    "tenancy_lease_up_to_7_years": 0.0078,
+    "tenancy_lease_above_7_years": 0.03,
+    "mortgage": 0.00375,
+    "share_capital": 0.0075,
+    "loan_capital": 0.00125,
+    "conveyance_sale": 0.015,
+    "marketable_securities": 0.00225,
+    "bill_of_exchange": 0.001,
+    "transfer_mineral_assets": 0.02
+  }
+}
